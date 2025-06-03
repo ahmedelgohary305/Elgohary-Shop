@@ -1,4 +1,4 @@
-# E-Commerce Android App
+# Elgohary-Shop E-Commerce App
 
 A modern, full-featured e-commerce Android application built with the latest Android development technologies and best practices.
 
