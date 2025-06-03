@@ -2,9 +2,6 @@
 
 A modern, feature-rich e-commerce mobile application built with a sleek dark theme UI, offering seamless shopping experience across multiple product categories.
 
-
-> **App Demo**: The video above showcases all the key features of ElgoharyShop including product browsing, cart management, wishlist functionality, and the complete user experience.
-
 ## ✨ Features
 
 ### 🛒 Core Shopping Features
