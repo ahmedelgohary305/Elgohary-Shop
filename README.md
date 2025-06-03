@@ -1,29 +1,52 @@
-# ElgoharyShop - E-commerce Mobile App 🛍️
+# E-Commerce Android App
 
-A modern, feature-rich e-commerce mobile application built with a sleek theme UI, offering seamless shopping experience across multiple product categories.
+A modern, full-featured e-commerce Android application built with the latest Android development technologies and best practices.
 
-## ✨ Features
+## 🚀 Features
 
-### 🛒 Core Shopping Features
-- **Product Catalog**: Browse through diverse product categories (Jewelry, Home & Garden, Clothing, Snowboarding)
-- **Product Details**: Detailed product views with high-quality images and descriptions
-- **Shopping Cart**: Add, remove, and modify items with quantity controls
-- **Wishlist**: Save favorite items for later purchase
-- **User Account**: Personalized user experience with account management
+- **Product Browsing**: Browse through a wide range of products with detailed information
+- **User Authentication**: Secure user registration and login system
+- **Shopping Cart**: Add, remove, and manage items in your shopping cart
+- **Order Management**: Place orders and track order history
+- **Search & Filtering**: Advanced product search and filtering capabilities
+- **Dark/Light Theme**: Seamless theme switching for better user experience
+- **Offline Support**: Room database ensures app functionality even offline
+- **Responsive UI**: Adaptive design that works across different screen sizes
 
-### 🎨 User Interface
-- **Modern Dark & Light Theme**: Sleek, contemporary design optimized for mobile viewing
-- **Intuitive Navigation**: Easy-to-use category browsing and product discovery
-- **Responsive Design**: Optimized for various screen sizes and orientations
-- **Visual Product Gallery**: High-quality product images with zoom capabilities
+## 🛠️ Tech Stack
 
-### 📦 Product Categories
-- **Jewelry**: Chakra bracelets, necklaces, and accessories
-- **Home & Garden**: Furniture, decor, candles, and outdoor items
-- **Clothing**: Fashion items for all occasions
-- **Sports & Recreation**: Specialized gear and equipment
+### **UI & Design**
+- **Jetpack Compose** - Modern declarative UI toolkit
+- **Material Design 3** - Latest Material Design components
+- **Dark/Light Theme Support** - Dynamic theme switching
 
-## 🖼️ Screenshots
+### **Architecture & Patterns**
+- **Clean Architecture** - Separation of concerns with clear layer boundaries
+- **MVVM Pattern** - Model-View-ViewModel architecture pattern
+- **Repository Pattern** - Centralized data access layer
+
+### **Backend Integration**
+- **Shopify Storefront API** - E-commerce backend integration
+- **Apollo GraphQL** - Type-safe GraphQL client for API communication
+
+### **Local Storage**
+- **Room Database** - Local SQLite database with compile-time verification
+- **DataStore** - Modern preferences storage solution
+
+### **Dependency Injection**
+- **Dagger Hilt** - Compile-time dependency injection framework
+
+### **Concurrency**
+- **Kotlin Coroutines** - Asynchronous programming
+- **Flow** - Reactive programming with data streams
+
+### **Image Loading**
+- **Coil** - Fast, lightweight image loading library optimized for Compose
+
+### **Development Language**
+- **Kotlin** - 100% Kotlin codebase with modern language features
+
+## 📱 Screenshots
 
 <div>
 
@@ -54,136 +77,149 @@ A modern, feature-rich e-commerce mobile application built with a sleek theme UI
 
 </div>
 
-## 🚀 Getting Started
+## 🏗️ Architecture
+
+The app follows Clean Architecture principles with three main layers:
+
+```
+├── presentation/        # UI Layer (Compose, ViewModels)
+├── domain/             # Business Logic Layer (Use Cases, Entities)
+└── data/              # Data Layer (Repositories, Data Sources)
+```
+
+### **Presentation Layer**
+- Jetpack Compose UI components
+- ViewModels for state management
+- UI state handling with StateFlow
+
+### **Domain Layer**
+- Use cases for business logic
+- Domain entities and models
+- Repository interfaces
+
+### **Data Layer**
+- Repository implementations
+- Remote data sources (Shopify API)
+- Local data sources (Room database)
+- Data mapping and caching strategies
+
+## 🔧 Setup & Installation
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- React Native CLI
-- Android Studio (for Android development)
-- Xcode (for iOS development)
+- Android Studio Hedgehog or later
+- JDK 17 or higher
+- Android SDK API level 24 or higher
 
-### Installation
+### Installation Steps
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/elgoharyshop.git
-   cd elgoharyshop
+   git clone https://github.com/ahmedelgohary305/Elgohary-Shop.git
+   cd ecommerce-app
    ```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
+2. **Configure Shopify API**
+   - Create a `local.properties` file in the root directory
+   - Add your Shopify credentials:
+   ```properties
+   SHOPIFY_DOMAIN=your-shop-domain.myshopify.com
+   SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-storefront-access-token
    ```
 
-3. **iOS Setup** (if targeting iOS)
-   ```bash
-   cd ios && pod install && cd ..
-   ```
+3. **Build and Run**
+   - Open the project in Android Studio
+   - Sync the project with Gradle files
+   - Run the app on an emulator or physical device
 
-4. **Run the application**
-   ```bash
-   # For Android
-   npx react-native run-android
-   
-   # For iOS
-   npx react-native run-ios
-   ```
+## 📦 Dependencies
 
-## 🛠️ Tech Stack
+### Core Dependencies
+```kotlin
+// UI & Compose
+implementation "androidx.compose.ui:ui:$compose_version"
+implementation "androidx.compose.material3:material3:$material3_version"
+implementation "androidx.activity:activity-compose:$activity_compose_version"
 
-- **Frontend**: React Native
-- **Navigation**: React Navigation
-- **State Management**: Redux/Context API
-- **UI Components**: Custom components with dark theme
-- **Icons**: React Native Vector Icons
-- **Image Handling**: React Native Image components
-- **Currency**: Egyptian Pound (EGP)
+// Architecture Components
+implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+implementation "androidx.navigation:navigation-compose:$nav_version"
 
-## 📱 Supported Platforms
+// Dependency Injection
+implementation "com.google.dagger:hilt-android:$hilt_version"
+kapt "com.google.dagger:hilt-compiler:$hilt_version"
 
-- ✅ Android (API level 21+)
-- ✅ iOS (iOS 11.0+)
+// Database
+implementation "androidx.room:room-runtime:$room_version"
+implementation "androidx.room:room-ktx:$room_version"
+kapt "androidx.room:room-compiler:$room_version"
 
-## 🎯 Key Features Breakdown
+// Network
+implementation "com.apollographql.apollo3:apollo-runtime:$apollo_version"
+implementation "com.apollographql.apollo3:apollo-api:$apollo_version"
 
-### Product Management
-- Multi-category product browsing
-- Advanced product filtering and search
-- Product image galleries
-- Detailed product descriptions
-- Price display in EGP currency
+// Image Loading
+implementation "io.coil-kt:coil-compose:$coil_version"
 
-### User Experience
-- Seamless cart management
-- Wishlist functionality
-- User account integration
-- Responsive mobile design
-- Intuitive checkout process
+// Preferences
+implementation "androidx.datastore:datastore-preferences:$datastore_version"
+```
 
-### Design Philosophy
-- **Dark Theme**: Modern, eye-friendly interface
-- **Minimalist**: Clean, uncluttered product presentation
-- **Mobile-First**: Optimized for touch interactions
-- **Performance**: Fast loading and smooth navigation
+## 🎨 Key Features Implementation
 
-## 📊 App Statistics
+### **Theme Management**
+- Dynamic color schemes based on system settings
+- Persistent theme preference using DataStore
+- Smooth theme transitions
 
-- **Categories**: 4+ main categories
-- **Currency**: Egyptian Pound (EGP)
-- **User Features**: Cart, Wishlist, Account management
-- **Theme**: Dark mode optimized
+### **State Management**
+- Unidirectional data flow with StateFlow
+- Compose state hoisting for reusable components
+- Error handling and loading states
 
-## 🤝 Contributing
+### **Offline Capability**
+- Room database caching for products and user data
+- Network connectivity monitoring
+- Graceful offline/online transitions
 
-We welcome contributions! Please follow these steps:
+### **Performance Optimization**
+- LazyColumn for efficient list rendering
+- Image caching with Coil
+- Coroutines for background operations
+- Memory leak prevention
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 🧪 Testing
 
-### Development Guidelines
-- Follow React Native best practices
-- Maintain consistent code style
-- Add appropriate comments for complex logic
-- Test on both Android and iOS platforms
+The app includes comprehensive testing:
 
-## 📝 License
+- **Unit Tests**: Business logic and use cases
+- **Integration Tests**: Repository and database operations
+- **UI Tests**: Compose UI testing with semantics
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Run tests with:
+```bash
+./gradlew test
+./gradlew connectedAndroidTest
+```
 
-## 📞 Contact & Support
+## 🚀 Performance
 
-- **Developer**: Ahmed Mohamed
-- **Email**: ahmedmohamed33@gmail.com
-- **Project Repository**: [GitHub Link](https://github.com/yourusername/elgoharyshop)
+- Lazy loading for large datasets
+- Image optimization and caching
+- Background processing with coroutines
+- Memory-efficient Compose components
 
-## 🔮 Roadmap
+## 👨‍💻 Developer
 
-- [ ] Payment integration
-- [ ] Order tracking
-- [ ] Push notifications
-- [ ] Social media integration
-- [ ] Advanced search filters
-- [ ] Product reviews and ratings
-- [ ] Multi-language support
-- [ ] Light theme option
+**Ahmed Mohamed**
+- LinkedIn: [Ahmed Elgohary](www.linkedin.com/in/ahmedelgohary14)
+- Email: ahmedelgohary040@gmail.com
 
 ## 🙏 Acknowledgments
 
-- Design inspiration from modern e-commerce platforms
-- React Native community for excellent documentation
-- Contributors and testers who helped improve the app
+- Shopify for providing the Storefront API
+- Google for Android development tools and libraries
+- The open-source community for amazing libraries
 
 ---
 
-<div align="center">
-
-**Made with ❤️ for seamless mobile shopping experience**
-
-[⬆ Back to Top](#elgoharyshop---e-commerce-mobile-app-)
-
-</div>
+*Built with ❤️ using Kotlin and Jetpack Compose*
