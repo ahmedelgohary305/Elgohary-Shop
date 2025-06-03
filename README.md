@@ -4,10 +4,17 @@ A modern, feature-rich e-commerce mobile application built with a sleek dark the
 
 ## 📱 App Showcase
 
-<!-- App demo video -->
-[![ElgoharyShop Demo](https://img.shields.io/badge/📹-Watch%20Demo%20Video-blue?style=for-the-badge)](./Elgohary%20Shop%20media/Elgohary%20shop%20showcase.mp4)
+<!-- Embedded demo video -->
+<div align="center">
 
-> **Demo Video**: Click the badge above to watch the full app showcase video demonstrating all features and user interactions.
+<video width="320" height="640" controls>
+  <source src="./Elgohary%20Shop%20media/Elgohary%20shop%20showcase.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+</div>
+
+> **App Demo**: The video above showcases all the key features of ElgoharyShop including product browsing, cart management, wishlist functionality, and the complete user experience.
 
 ## ✨ Features
 
