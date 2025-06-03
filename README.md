@@ -1,6 +1,6 @@
 # ElgoharyShop - E-commerce Mobile App 🛍️
 
-A modern, feature-rich e-commerce mobile application built with a sleek dark theme UI, offering seamless shopping experience across multiple product categories.
+A modern, feature-rich e-commerce mobile application built with a sleek theme UI, offering seamless shopping experience across multiple product categories.
 
 ## ✨ Features
 
