@@ -33,27 +33,27 @@ A modern, feature-rich e-commerce mobile application built with a sleek dark the
 <div align="center">
 
 ### Product Detail Page
-<img src="screenshots/product-detail.png" alt="Product Detail" width="300"/>
+<img src="Elgohary Shop media/Detail Screen.png" alt="Product Detail" width="300"/>
 
 *7 Chakra Bracelet with detailed description and purchase options*
 
 ### Home & Categories
-<img src="screenshots/home-categories.png" alt="Home & Categories" width="300"/>
+<img src="Elgohary Shop media/Main Screen.png" alt="Home & Categories" width="300"/>
 
 *Main dashboard with category navigation and latest products*
 
 ### Wishlist Management
-<img src="screenshots/wishlist.png" alt="Wishlist" width="300"/>
+<img src="Elgohary Shop media/Wishlist Screen.png" alt="Wishlist" width="300"/>
 
 *Personal wishlist with saved items across different categories*
 
 ### Shopping Cart
-<img src="screenshots/cart.png" alt="Shopping Cart" width="300"/>
+<img src="Elgohary Shop media/Cart Screen.png" alt="Shopping Cart" width="300"/>
 
 *Cart management with quantity controls and checkout option*
 
 ### Category Browse
-<img src="screenshots/home-garden.png" alt="Home & Garden Category" width="300"/>
+<img src="Elgohary Shop media/Category Screen.png" alt="Home & Garden Category" width="300"/>
 
 *Home & Garden category with diverse product selection*
 
