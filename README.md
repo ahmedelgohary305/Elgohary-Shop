@@ -186,20 +186,6 @@ implementation "androidx.datastore:datastore-preferences:$datastore_version"
 - Coroutines for background operations
 - Memory leak prevention
 
-## 🧪 Testing
-
-The app includes comprehensive testing:
-
-- **Unit Tests**: Business logic and use cases
-- **Integration Tests**: Repository and database operations
-- **UI Tests**: Compose UI testing with semantics
-
-Run tests with:
-```bash
-./gradlew test
-./gradlew connectedAndroidTest
-```
-
 ## 🚀 Performance
 
 - Lazy loading for large datasets
