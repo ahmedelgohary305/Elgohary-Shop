@@ -196,7 +196,7 @@ implementation "androidx.datastore:datastore-preferences:$datastore_version"
 ## 👨‍💻 Developer
 
 **Ahmed Mohamed**
-- LinkedIn: [Ahmed Elgohary](www.linkedin.com/in/ahmedelgohary14)
+- LinkedIn: [My LinkedIn](www.linkedin.com/in/ahmedelgohary14)
 - Email: ahmedelgohary040@gmail.com
 
 ## 🙏 Acknowledgments
