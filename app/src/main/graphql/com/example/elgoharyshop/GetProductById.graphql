@@ -1,0 +1,28 @@
+query GetProductById($id: ID!) {
+    node(id: $id) {
+        ... on Product {
+            id
+            title
+            description
+            images(first: 10) {
+                edges {
+                    node {
+                        url
+                    }
+                }
+            }
+            variants(first: 1) {
+                edges {
+                    node {
+                        id
+                        price {
+                            amount
+                            currencyCode
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

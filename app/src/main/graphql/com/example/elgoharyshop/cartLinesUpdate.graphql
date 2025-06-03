@@ -1,0 +1,38 @@
+mutation cartLinesUpdate($cartId: ID!, $lines: [CartLineUpdateInput!]!) {
+    cartLinesUpdate(cartId: $cartId, lines: $lines) {
+        cart {
+            id
+            checkoutUrl
+            cost {
+                subtotalAmount {
+                    amount
+                    currencyCode
+                }
+            }
+            lines(first: 100) {
+                edges {
+                    node {
+                        id
+                        quantity
+                        merchandise {
+                            __typename
+                            ... on ProductVariant {
+                                id
+                                image {
+                                    url
+                                }
+                                price {
+                                    amount
+                                    currencyCode
+                                }
+                                product {
+                                    title
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

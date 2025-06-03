@@ -1,0 +1,28 @@
+query GetProducts($first: Int!) {
+    products(first: $first, sortKey: CREATED_AT, reverse: true) {
+        edges {
+            node {
+                id
+                title
+                images(first: 1) {
+                    edges {
+                        node {
+                            url
+                        }
+                    }
+                }
+                variants(first: 1) {
+                    edges {
+                        node {
+                            price {
+                                amount
+                                currencyCode
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

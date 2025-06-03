@@ -1,0 +1,12 @@
+mutation CustomerAccessTokenCreate($input: CustomerAccessTokenCreateInput!) {
+    customerAccessTokenCreate(input: $input) {
+        customerAccessToken {
+            accessToken
+            expiresAt
+        }
+        userErrors {
+            field
+            message
+        }
+    }
+}

@@ -1,0 +1,27 @@
+query SearchProducts($query: String!) {
+    products(first: 20, query: $query) {
+        edges {
+            node {
+                id
+                title
+                images(first: 1) {
+                    edges {
+                        node {
+                            url
+                        }
+                    }
+                }
+                variants(first: 1) {
+                    edges {
+                        node {
+                            price {
+                                amount
+                                currencyCode
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
