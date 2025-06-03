@@ -12,7 +12,7 @@ A modern, feature-rich e-commerce mobile application built with a sleek theme UI
 - **User Account**: Personalized user experience with account management
 
 ### 🎨 User Interface
-- **Modern Dark Theme**: Sleek, contemporary design optimized for mobile viewing
+- **Modern Dark & Light Theme**: Sleek, contemporary design optimized for mobile viewing
 - **Intuitive Navigation**: Easy-to-use category browsing and product discovery
 - **Responsive Design**: Optimized for various screen sizes and orientations
 - **Visual Product Gallery**: High-quality product images with zoom capabilities
