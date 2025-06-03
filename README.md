@@ -5,9 +5,7 @@ A modern, feature-rich e-commerce mobile application built with a sleek dark the
 ## 📱 App Showcase
 
 <!-- Add your app demo video here -->
-[![ElgoharyShop Demo](https://img.shields.io/badge/📹-Watch%20Demo%20Video-blue?style=for-the-badge)](./demo/app-showcase.mp4)
-
-> **Note:** Replace `./demo/app-showcase.mp4` with the actual path to your demo video file.
+[![ElgoharyShop Demo](https://img.shields.io/badge/📹-Watch%20Demo%20Video-blue?style=for-the-badge)](Elgohary Shop media/Elgohary shop showcase.mp4)
 
 ## ✨ Features
 
