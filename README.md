@@ -93,7 +93,6 @@ The app follows Clean Architecture principles with three main layers:
 - UI state handling with StateFlow
 
 ### **Domain Layer**
-- Use cases for business logic
 - Domain entities and models
 - Repository interfaces
 
@@ -101,7 +100,7 @@ The app follows Clean Architecture principles with three main layers:
 - Repository implementations
 - Remote data sources (Shopify API)
 - Local data sources (Room database)
-- Data mapping and caching strategies
+- Data mapping
 
 ## 🔧 Setup & Installation
 
