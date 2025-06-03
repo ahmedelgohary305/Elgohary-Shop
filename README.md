@@ -218,7 +218,3 @@ Run tests with:
 - Shopify for providing the Storefront API
 - Google for Android development tools and libraries
 - The open-source community for amazing libraries
-
----
-
-*Built with ❤️ using Kotlin and Jetpack Compose*
